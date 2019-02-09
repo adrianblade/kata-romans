@@ -6,19 +6,15 @@ class RomansSpec extends FlatSpec with Matchers {
   "Romans" should "translate one" in {
     Romans.roman(1) shouldEqual "I"
   }
-
   "Romans" should "translate two" in {
     Romans.roman(2) shouldEqual "II"
   }
-
   "Romans" should "translate three" in {
     Romans.roman(3) shouldEqual "III"
   }
-
   "Romans" should "translate four" in {
     Romans.roman(4) shouldEqual "IV"
   }
-
   "Romans" should "translate 5" in {
     Romans.roman(5) shouldEqual "V"
   }
@@ -75,5 +71,20 @@ class RomansSpec extends FlatSpec with Matchers {
   }
   "Romans" should "translate 25" in {
     Romans.roman(25) shouldEqual "XXV"
+  }
+  "Romans" should "translate 49" in {
+    Romans.roman(49) shouldEqual "XLIX"
+  }
+  "Romans" should "translate 121" in {
+    Romans.roman(121) shouldEqual "CXXI"
+  }
+  "Romans" should "translate 1001" in {
+    Romans.roman(1001) shouldEqual "MI"
+  }
+  "Romans" should "translate 2013" in {
+    Romans.roman(2013) shouldEqual "MMXIII"
+  }
+  "Romans" should "translate 3001" in {
+    Romans.roman(3001) shouldEqual "MMMI"
   }
 }
